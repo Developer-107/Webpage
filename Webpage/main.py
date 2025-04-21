@@ -5,7 +5,7 @@ from flask_ckeditor import CKEditor
 from flask_login import UserMixin, login_user, LoginManager, current_user, logout_user
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
+app.config['SECRET_KEY'] =  -- Your Secret Key Here --
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
